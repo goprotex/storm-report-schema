@@ -1,0 +1,168 @@
+{
+  "report_title": "Storm Damage Intelligence Report",
+  "generated_at": "2025-10-14T17:50:02Z",
+  "company": {
+    "name": "Hayden Claims Group",
+    "tagline": "Mother Nature is not fair but insurance should be",
+    "phone": "+1 830 777 9111",
+    "email": "office@haydenclaim.com",
+    "website": "https://www.haydenclaim.com",
+    "logo_url": "https://www.haydenclaim.com/assets/logo.png",
+    "license_info": "Texas Department of Insurance Public Adjuster License 3378204",
+    "address": "5900 Balcones Drive Suite 26922 Austin TX 78731"
+  },
+  "customer_input": {
+    "address_input": "1112 Barbara Ann St Kerrville TX 78028",
+    "contact_name": "John Smith",
+    "contact_email": "john.smith@example.com",
+    "contact_phone": "+1 555 010 0101"
+  },
+  "property": {
+    "address_line1": "1112 Barbara Ann St",
+    "city": "Kerrville",
+    "state": "TX",
+    "postal_code": "78028",
+    "county": "Kerr County",
+    "lat": 30.0552,
+    "lon": -99.1296,
+    "structure_type": "Single family residence",
+    "roof_type": "Asphalt shingles",
+    "year_built": 1998,
+    "building_sqft": 2120
+  },
+  "peril_summary": {
+    "overall_risk_score": 0.78,
+    "hail_probability_last_24_months": 0.72,
+    "wind_probability_last_24_months": 0.61,
+    "flood_probability_last_24_months": 0.18,
+    "notes": "Elevated hail risk due to multiple swaths intersecting within 1 mile and numerous public reports"
+  },
+  "recent_storms": [
+    {
+      "event_date": "2025-04-09",
+      "peril": "hail",
+      "magnitude": "2.50 inch",
+      "max_wind_mph": null,
+      "distance_miles": 0.42,
+      "bearing": "NE",
+      "severity_score": 0.86,
+      "swath_id": "HSWATH_20250409_001",
+      "city_nearby": "Kerrville",
+      "source_list": [
+        {
+          "name": "NWS Local Storm Report",
+          "url": "https://example.com/lsr/20250409"
+        },
+        {
+          "name": "MRMS Hail Swath",
+          "url": "https://example.com/mrms/20250409"
+        }
+      ],
+      "narrative": "Very large hail reported within half a mile. Overlap with MRMS hail algorithm indicates destructive hail possible."
+    },
+    {
+      "event_date": "2024-10-27",
+      "peril": "hail",
+      "magnitude": "1.75 inch",
+      "max_wind_mph": null,
+      "distance_miles": 1.1,
+      "bearing": "W",
+      "severity_score": 0.67,
+      "swath_id": "HSWATH_20241027_014",
+      "city_nearby": "Kerrville",
+      "source_list": [
+        {
+          "name": "NWS Storm Events",
+          "url": "https://example.com/stormevents/20241027"
+        }
+      ],
+      "narrative": "Golf ball size hail west of address. Several residential roof damages reported."
+    },
+    {
+      "event_date": "2024-05-21",
+      "peril": "wind",
+      "magnitude": null,
+      "max_wind_mph": 68,
+      "distance_miles": 0.8,
+      "bearing": "S",
+      "severity_score": 0.58,
+      "swath_id": "WIND_20240521_020",
+      "city_nearby": "Kerrville",
+      "source_list": [
+        {
+          "name": "NWS Local Storm Report",
+          "url": "https://example.com/lsr/20240521"
+        }
+      ],
+      "narrative": "Severe straight line winds with tree limb damage and scattered power outages."
+    }
+  ],
+  "address_match": {
+    "geocoder": "Esri",
+    "match_confidence": 0.98,
+    "parcel_id": "KERR-123-456-789",
+    "census_block": "480--placeholder--",
+    "dpv_confirmed": true
+  },
+  "images": {
+    "map_image_url": "https://maps.example.com/static?center=30.0552,-99.1296&zoom=13",
+    "hail_swath_overlay_url": "https://maps.example.com/tiles/hail/2025-04-09.png",
+    "wind_swath_overlay_url": "https://maps.example.com/tiles/wind/2024-05-21.png",
+    "property_photo_urls": [
+      "https://example.com/photos/property_front.jpg",
+      "https://example.com/photos/roof_closeup.jpg"
+    ]
+  },
+  "hail_size_reference": [
+    {
+      "size": "0.75 inch",
+      "common_name": "penny",
+      "typical_damage": "minor shingle bruising soft metals dings screens"
+    },
+    {
+      "size": "1.00 inch",
+      "common_name": "quarter",
+      "typical_damage": "granule loss bruising small fractures gutters and fascia dents"
+    },
+    {
+      "size": "1.50 inch",
+      "common_name": "ping pong ball",
+      "typical_damage": "shingle fractures cracked vents broken screens wide metal damage"
+    },
+    {
+      "size": "2.00 inch",
+      "common_name": "hen egg",
+      "typical_damage": "shattered skylights cracked tiles large dents to metal ridge and vents"
+    },
+    {
+      "size": "2.50 inch",
+      "common_name": "tennis ball",
+      "typical_damage": "punctures on aged shingles broken windows heavy metal deformation"
+    }
+  ],
+  "recommendations": [
+    {
+      "title": "Full roof inspection",
+      "detail": "Document soft metals photos and chalk test on slopes facing the storm origin"
+    },
+    {
+      "title": "Attic inspection",
+      "detail": "Check decking for fractures around vents and penetrations"
+    },
+    {
+      "title": "HVAC and condenser",
+      "detail": "Photograph fin damage and test performance"
+    },
+    {
+      "title": "Gutters and fascia",
+      "detail": "Measure and mark dents for estimate line items"
+    }
+  ],
+  "disclaimer": "This report aggregates third party storm intelligence and public reports. Probabilities are estimates and not guarantees. Always verify conditions on site and follow local code and safety requirements.",
+  "prepared_by": {
+    "name": "Hayden Oehler",
+    "title": "Public Adjuster",
+    "tdi_license": "3378204",
+    "signature_image_url": "https://example.com/signature.png"
+  }
+}
